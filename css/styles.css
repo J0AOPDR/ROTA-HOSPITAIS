@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: 'Nunito Sans', sans-serif;
+}
+main {
+    display: flex;
+}
+.hospital-list {
+    width: 15%;
+    height: 100vh;
+    overflow: auto;
+    background: whitesmoke;
+}
+#map {
+    height: 100vh;
+    width: 85%;
+}
+.hospital-list .heading {
+    background: #000000;
+    color: #fff;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+.hospital-list .heading h2 {
+    padding: 1rem;
+}
+::-webkit-scrollbar {
+    width: 3px;
+    height: 3px;
+    border-left: 0;
+    background: rgba(0, 0, 0, 0.1);
+}
+::-webkit-scrollbar-thumb {
+    background: #000000;
+    border-radius: 0;
+}
+.hospital-list ul.list {
+    padding: 0 1rem;
+    list-style-type: none;
+}
+.hospital-list .hospital-item {
+    margin: 1rem 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding-bottom: 1rem;
+}
+.hospital-list li:last-child .hospital-item {
+    border: none;
+}
+.hospital-list .hospital-item a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #000000;
+    font-weight: 700;
+}
+.hospital-list .hospital-item a:hover{
+    color: #817a7a;
+    transition: 0.4s;
+}
+.hospital-list .hospital-item p {
+    font-size: 14px;
+    color: #000000;
+}
+.leaflet-popup-content-wrapper {
+    padding: 0;
+    overflow: hidden;
+}
+.leaflet-popup-content-wrapper .leaflet-popup-content {
+    margin: 0;
+}
+.leaflet-popup-content-wrapper h4 {
+    padding: 12px;
+    background: #000000;
+    color: #fff;
+    font-size: 16px;
+}
+.leaflet-popup-content-wrapper p {
+    padding: 0 16px;
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+.leaflet-popup-content-wrapper .leaflet-popup-content .phone-number {
+    padding: 16px;
+    padding-top: 0;
+}
+.leaflet-popup-content-wrapper .leaflet-popup-content .phone-number a {
+    color: #000000;
+    font-size: 14px;
+}
